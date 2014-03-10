@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>DelegationManager.js</title>
+        
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="log">Resize will start ;-)</div>
+        
+        <!-- @required: import the DelegationManager script -->
+        <script src='delegationManager.js'></script>
+        
+        <script>
+            /* @optional: define custom settings */
+            var settings = {
+                fps: 10, 
+                latencyToEndEvent: 200
+            };
+            
+            /* @required: initialize a DelegationManager */
+            var windowResizeDelegate = new DelegationManager(settings);
+
+            /* @required: choose a function to manage the delegation of! within it ... */
+            window.onresize = function (e) {
+                /* @required: ... call the tick method of your DelegationManager with appropriate parameters */
+                windowResizeDelegate.tick(e);
+            };
+
+            /* @optional: assign a method to handle 'eventDidStart' [same parameters that you passed to .tick()] */
+            windowResizeDelegate.setEventDidStart(function (e) {
+                document.getElementById('log').innerHTML = 'Resize did start'; 
+            });
+
+            /* @optional: assign a method to handle 'eventDidChange' [same parameters that you passed to .tick()] */
+            windowResizeDelegate.setEventDidChange(function (e) {
+                document.getElementById('log').innerHTML = 'Resize did change'; 
+            });
+
+            /* @optional: assign a method to handle 'eventDidEnd' [same parameters that you passed to .tick()]*/
+            windowResizeDelegate.setEventDidEnd(function (e) {
+                document.getElementById('log').innerHTML = 'Resize did end'; 
+            });
+        </script>
+    </body>
+</html>
