@@ -2,11 +2,9 @@
 
 ## Demo
 
-* [Demo](http://lab.tomknig.de/DelegationManager/)
+* [See it in action](http://lab.tomknig.de/DelegationManager/)
 
 ## Usage
-
-#### Required Implementation
 
 * Import the ScrollView script:
 ```html
@@ -26,14 +24,7 @@ function functionThatIsHeavilyOftenCalled(a, b, ...) {
 };
 ```
 
-#### Optional Implementation
-
-* Bind custom methods to delegate methods:
-    - `eventDidStart` called when the event starts
-    - `eventDidStart` called when the event did start and keeps changing. `settings.fps` times per second.
-    - `eventDidStart` called when the event did start but did not change for `settings.latencyToEndEvent`ms.
-
-* Assign custom methods to handle event states. Use same parameters as you did for `tick(a, b, ...);`
+* Assign custom methods to handle event states. Use same parameters as for `tick(a, b, ...);`
 ```javascript
 yourDelegationManager.setEventDidStart(function (a, b, ...) {
     console.log('DelegationManager: Event did start'); 
@@ -48,13 +39,15 @@ yourDelegationManager.setEventDidEnd(function (a, b, ...) {
 });
 ```
 
-
-#### Example
+## Code Example
 
 * Observe the `window.onchange` event and print the event states to a div:
+Within the `<body>`:
 ```html
 <div id="log">Resize will start ;-)</div>
+
 ```
+Within a `<script>` at the end of the `<body>`:
 ```javascript
 var settings = {
     fps: 20
