@@ -2,7 +2,7 @@
 
 ## Demo
 
-* Demo url is going to be added
+* [Demo](http://lab.tomknig.de/DelegationManager/)
 
 ## Usage
 
