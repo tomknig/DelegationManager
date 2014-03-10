@@ -41,7 +41,8 @@ yourDelegationManager.setEventDidEnd(function (a, b, ...) {
 
 ## Code Example
 
-* Observe the `window.onchange` event and print the event states to a div:
+The DelegationManager of this example observes the `window.onchange` event and prints the event states to a div:
+
 Within the `<body>`:
 ```html
 <div id="log">Resize will start ;-)</div>
