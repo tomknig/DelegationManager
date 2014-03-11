@@ -90,7 +90,7 @@ Note: `params` Is a list of Parameters. The List should be used consistently wit
 
 ## Contact
 
-Follow me on Twitter ([@TomKnig](https://twitter.com/TomKnig))
+[Tom König](http://github.com/TomKnig) [@TomKnig](https://twitter.com/TomKnig)
 
 ## License
 
