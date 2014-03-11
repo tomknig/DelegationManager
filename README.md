@@ -2,7 +2,7 @@
 
 ## Demo
 
-* [See it in action](http://lab.tomknig.de/DelegationManager/)
+* [See it in action](http://lab.tomknig.de/DelegationManager/demo.html)
 
 ## Usage
 
