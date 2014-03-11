@@ -1,3 +1,14 @@
+/**
+* DelegationManager
+* provides customizeable delegate methods for any events
+*
+* @author Tom König
+* @copyright Tom König 2014
+* @link www.github.com/TomKnig/DelegationManager
+* @license MIT
+* @version 1.0.0
+*/
+
 function DelegationManager(userSettings) {
     'use strict';
     /*jslint browser: true*/
